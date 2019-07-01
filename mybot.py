@@ -16,6 +16,10 @@ def send_welcome(m):
                         <b>welcome to telegram promotion🤣🤣</b>"
 if u want to register your channel click /register_a_channel
                         \"""", parse_mode="HTML")
+       
+@bot.message_handler(commands=['telegram'])
+def send_welcome(m):
+       bot.send_message(m.chat.id, "akhil")       
 
 @server.route('/' + API_TOKEN, methods=['POST'])
 def getMessage():
