@@ -1,7 +1,9 @@
 import os
-
+import time
 from flask import Flask, request
 import telebot
+from telebot import types
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API_TOKEN = '771906226:AAHiz4ByfyxEHRLwrq7DFtjrM2peeglMXF8'
 bot = telebot.TeleBot(API_TOKEN)
